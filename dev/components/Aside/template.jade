@@ -1,0 +1,6 @@
+aside.Aside
+	nav.Aside-menu
+		ul.Aside-menuList
+			- var dataItem = [{"description":"Empresas","submenu":[{"description":"Multimedios"},{"description":"GEN"},{"description":"CINCO M DOS"},{"description":"Grupo Televisa"},{"description":"Prisa"},{"description":"Grupo imagen"},{"description":"OEM"},{"description":"Grupo Mundo Ejecutivo"},{"description":"Azteca"},{"description":"Grupo Ezpansión"}]},{"description":"Grupos de Comunicación","submenu":[{"description":"Multimedios"},{"description":"GEN"},{"description":"CINCO M DOS"},{"description":"Grupo Televisa"},{"description":"Prisa"},{"description":"Grupo imagen"},{"description":"OEM"},{"description":"Grupo Mundo Ejecutivo"},{"description":"Azteca"},{"description":"Grupo Ezpansión"}]},{"description":"Servicios","submenu":[{"description":"Multimedios"},{"description":"GEN"},{"description":"CINCO M DOS"},{"description":"Grupo Televisa"},{"description":"Prisa"},{"description":"Grupo imagen"},{"description":"OEM"},{"description":"Grupo Mundo Ejecutivo"},{"description":"Azteca"},{"description":"Grupo Ezpansión"}]}]
+			each val in dataItem
+				include ../Aside-menuItem/template.jade

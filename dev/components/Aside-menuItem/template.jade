@@ -1,0 +1,10 @@
+li.Aside-menuItem
+	ul.Aside-subList
+		span.Aside-text
+			|	#{val.description}
+		span.Aside-icon flecha
+		each subItem in val.submenu		
+			li.Aside-subItem
+				a.Aside-link(href="#")
+					|	#{subItem.description}
+	
