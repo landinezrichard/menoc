@@ -1,0 +1,5 @@
+nav.MainMenu
+	ul#menu.MainMenu-list
+		- var menuData = [{"id":"one","description":"Nosotros"},{"id":"two","description":"Gimnasio"},{"id":"three","description":"Horarios y Sedes"},{"id":"four","description":"Contacto"}]
+		each val in menuData
+			include ../MainMenu-item/template.jade

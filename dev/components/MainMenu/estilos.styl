@@ -1,0 +1,74 @@
+/*COMPONENTE MENU PRINCIPAL*/
+
+.MainMenu
+	background-color $white	
+
+	&-button
+		border 0
+		border-radius 5px
+		background-color $white
+		order 1
+		padding 0
+		margin-left 1rem
+		color $turquesa
+
+	&-list
+		margin 0
+		padding 0
+		list-style none
+		height 0
+		overflow hidden
+		transition height .3s ease
+		max-width 1100px
+
+		&--show
+			height auto
+	&-item
+		transition all .3s ease
+		&:hover
+			background-color $turquesa		
+			.MainMenu-link
+				color $white
+
+	&-link
+		text-decoration none
+		color $black
+		width 100%
+		padding 1.5em
+		display block
+		text-transform uppercase
+		font-size 1.3em		
+
+.icon-menu
+	font-size 2em
+
+/*Tablet*/
+
+@media (min-width: 768px)
+	.MainMenu		
+		margin-right 1.5rem
+		width 70%
+
+		&-button
+			display none
+			
+		&-list
+			height 5em
+			display flex
+			justify-content space-around
+			
+		&-item
+			display inline-block
+			&:hover
+				background-color white		
+				.MainMenu-link
+					color $black
+					border-bottom 4px solid $lima
+			
+		&-link
+			padding 1em .5em 0
+			width auto
+			border-bottom 4px solid $light_gray2
+			
+			&:active
+				border-bottom 4px solid $lima
