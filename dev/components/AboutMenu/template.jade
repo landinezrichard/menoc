@@ -1,0 +1,6 @@
+nav.AboutMenu
+	div.AboutMenu-container
+		ul#aboutMenu.AboutMenu-list
+			- var menuData = [{"id":"nosotros","description":"Nosotros"},{"id":"noticias","description":"Noticias"},{"id":"contactenos","description":"Contáctenos"},{"id":"tarifas","description":"Tarifas"},{"id":"politicas","description":"Politicas de privacidad"}]
+			each val in menuData
+				include ../AboutMenu-item/template.jade

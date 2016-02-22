@@ -1,7 +1,8 @@
-/*COMPONENTE MENU PRINCIPAL*/
+/*COMPONENTE ABOUTMENU*/
 
-.MainMenu
-	background-color $light_gray
+.AboutMenu
+	font-weight 300
+	background-color $light_black
 
 	&-button
 		border 0
@@ -11,15 +12,18 @@
 		padding 0
 		margin-left 1rem
 		color $turquesa //ojo
+		
+	&-container
+		margin 0 auto
+		max-width 1100px
 
 	&-list
-		margin 0
+		margin 0 1.4em 0 0
 		padding 0
 		list-style none
 		height 0
 		overflow hidden
-		transition height .3s ease
-		max-width 1100px
+		transition height .3s ease		
 
 		&--show
 			height auto
@@ -27,12 +31,12 @@
 		transition all .3s ease
 		&:hover
 			background-color $naranja
-			.MainMenu-link
+			.AboutMenu-link
 				color $white
 
 	&-link
 		text-decoration none
-		color $black
+		color $white
 		width 100%
 		padding 1.5em
 		display block		
@@ -45,9 +49,7 @@
 /*Tablet*/
 
 @media (min-width: 768px)
-	.MainMenu		
-		margin-right .5rem
-		width 90%
+	.AboutMenu		
 
 		&-button
 			display none
@@ -57,14 +59,14 @@
 			line-height 5em
 			display flex
 			flex-flow row nowrap
-			justify-content space-around
+			justify-content flex-end
 			text-align center
 			
 		&-item
 			display inline-block
 			&:hover
 				background-color $naranja
-				.MainMenu-link
+				.AboutMenu-link
 					color $black					
 			
 		&-link
