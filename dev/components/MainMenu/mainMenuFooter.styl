@@ -1,0 +1,28 @@
+/*Tablet*/
+
+@media (min-width: 768px)
+	.MainMenu				
+
+		&-button
+			display none
+			
+		&-list
+			height 4em
+			line-height 4em
+			display block			
+			text-align center
+			
+		&-item
+			display inline-block
+			&:hover
+				background-color $naranja
+				.MainMenu-link
+					color $white
+			
+		&-link
+			padding 0 .4em
+			width auto			
+			
+			&:active
+				border-bottom 4px solid $lima
+		

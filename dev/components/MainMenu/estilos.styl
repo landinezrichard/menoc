@@ -39,7 +39,13 @@
 		font-size 1em
 		
 		&:active
-			background-color $naranja
+			background-color $naranja		
+	
+	&--footer
+		background-color $black
+		color $white
+		// estilos menu principalen el Footer
+		@import "./mainMenuFooter.styl"
 
 
 /*Tablet*/
@@ -69,7 +75,7 @@
 			
 		&-link
 			padding 0 .4em
-			width auto			
+			width auto
 			
 			&:active
 				border-bottom 4px solid $lima
