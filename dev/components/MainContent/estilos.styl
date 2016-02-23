@@ -5,18 +5,27 @@
 	&-all
 		position relative
 		top 0
-		left 0
+		left 0		
+	
+	&-row
 		display flex
-		flex-flow row nowrap		
+		flex-flow row nowrap
+		padding-top 2.1em
+		&:first-child
+			padding-top 0
+		
+	&-left
+		width 24%
+		margin-left .5em	
 	
 	&-right
-		width 80%
+		width 76%
 		margin 0 1em
-
+		border-bottom 2px dotted $light_gray	
 	
 /*Tablet*/
 
 @media (min-width: 768px)
 	.MainContent
 		width 1100px
-		margin 13em auto 13em
+		margin 13em auto 0

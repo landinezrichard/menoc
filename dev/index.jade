@@ -8,7 +8,21 @@ html(lang="es")
 		include ./components/Header/template.jade
 		section.MainContent
 			div.MainContent-all
-				include ./components/Aside/template.jade
-				div.MainContent-right
-					include ./components/Slider/template.jade
+				div.MainContent-row
+					div.MainContent-left
+						include ./components/Aside/template.jade
+					div.MainContent-right
+						include ./components/Slider/template.jade
+				div.MainContent-row
+					div.MainContent-left
+						include ./components/Publicidad/template.jade
+					div.MainContent-right
+						include ./components/News/template.jade
+				div.MainContent-row
+					div.MainContent-left
+						include ./components/Publicidad/template.jade
+					div.MainContent-right
+						include ./components/Publicidad/template.jade
+						include ./components/Coments/template.jade
+		include ./components/Footer/template.jade
 		script(type="text/javascript", src="js/app.js")
