@@ -1,15 +1,42 @@
 /*ASIDE*/
 
 .Aside
-	&-menuList
-		list-style none
-		
+	&-menu
+		width 260px
+		height 470px
+		border-radius 5px
+		box-shadow 0 1px 6px $dark_gray
+		padding-top 1em
 	&-menuItem
 		background-color $light_gray
+		position relative
+
+		&:hover
+			cursor pointer
+			color $naranja
+		&--active
+			color $naranja
+			
+	&-menuList
+		display none
 		
-	&-subList
-		padding 0
+	&-menuItem
+	&-menuList
+		margin 1em
 		
 	&-subItem
 		background-color $white
-	
+		display block
+		
+	&-link
+		text-decoration none
+		color $dark_gray
+		
+	&-subItem
+	&-text
+		padding-left 1em
+		
+	&-icon
+		position absolute
+		right 0
+		padding-right 1em 
