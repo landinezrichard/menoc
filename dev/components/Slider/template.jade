@@ -1,0 +1,15 @@
+section.Slider
+	ul.rslides
+		-var data = [{"src":"http://lorempixel.com/800/460/nightlife/"},{"src":"http://lorempixel.com/800/460/sports/"},{"src":"http://lorempixel.com/800/460/nature/"}]
+		- for (var x = 0; x < 3; x++)
+			li
+				figure.Slider-imageContainer
+					img.Slider-image(src="#{data[x].src}", alt="imagen #{x}")
+				div.Slider-text
+					h2.Slider-title
+						|	Texto
+					p.Slider-description
+						|	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem a fugiat cupiditate debitis non.
+					div.Slider-buttonContainer
+						a.Slider-button(href="#")
+							|	Ver más

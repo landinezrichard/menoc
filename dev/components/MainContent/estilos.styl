@@ -1,6 +1,17 @@
 .MainContent
 	margin 4em 0 13em
 	background-color $white
+	
+	&-all
+		position relative
+		top 0
+		left 0
+		display flex
+		flex-flow row nowrap		
+	
+	&-right
+		width 80%
+		margin 0 1em
 
 	
 /*Tablet*/
@@ -8,4 +19,4 @@
 @media (min-width: 768px)
 	.MainContent
 		width 1100px
-		margin 12.5em auto 13em
+		margin 13em auto 13em

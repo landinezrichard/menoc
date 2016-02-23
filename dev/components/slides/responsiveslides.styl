@@ -1,0 +1,179 @@
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 60%;
+  border: 0;
+  }
+  
+/*
+* Estilos controles
+*/
+
+/*
+
+  _nav --> es para los controles flechas: "prev - next"
+
+*/
+.rslides_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 15px;
+  opacity: 0.7;  
+  overflow: hidden;
+  text-decoration: none;
+  height: 64px;
+  width: 64px;  
+  background-color: $lima;
+  margin-top: -45px;
+  text-align: center;
+  font-size: 3em;
+  color: $white;
+  line-height: 4rem;
+  }
+
+.rslides_nav:active {
+  opacity: 1.0;
+  }
+
+.rslides_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 15px;
+  }
+
+.transparent-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 0;
+  left: 0;
+  display: block;
+  background: #fff; /* Fix for IE6-9 */
+  opacity: 0;  
+  width: 48%;  
+  overflow: hidden;
+  height: 91%;
+  }
+
+.transparent-btns_nav.next {
+  left: auto;
+  right: 0;
+  }
+
+.large-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  opacity: 0.6;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;  
+  background-color: $lima;
+  width: 38px;
+  }
+
+.large-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.large-btns_nav.next {
+  left: auto;
+  background-position: right 50%;
+  right: 0;
+  }
+
+.rslides_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+  outline: none;
+  }
+
+/*
+  _tabs --> estilos navegación puntos
+  
+*/
+
+.rslides_tabs {  
+  padding: 0;   
+  font-size: 16px;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 540px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: .5rem;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  }
+  
+.rslides_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 5px;
+  }
+  
+//puntos
+  
+.rslides_tabs a {  
+  line-height: 20px;
+  padding: 4px;
+  background-color: $white;
+  display: inline;
+  overflow: hidden;
+  text-decoration: none;  
+  width: 9px;
+  height: 9px;
+  text-indent: -9999px;
+  color: $white;
+  border-radius: 15px;
+  display: inline-block;
+  _display: block;
+  *display: block;
+  }
+  
+ /*botones puntos seleccionados*/ 
+  
+.rslides_tabs .rslides_here a {  
+  background-color: transparent;
+  border: 2px solid $white;
+  font-weight: bold;
+  width: 6px;
+  height: 6px;
+  }
