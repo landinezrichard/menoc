@@ -1,8 +1,7 @@
 /*COMPONENTE MENU PRINCIPAL*/
 
-.MainMenu
-	background-color $light_gray
-
+.MainMenu	
+	
 	&-button
 		border 0
 		border-radius 5px
@@ -15,16 +14,20 @@
 	&-list
 		margin 0
 		padding 0
-		list-style none
-		height 0
-		overflow hidden
-		transition height .3s ease
+		list-style none		
+		overflow-y scroll
+		overflow-x hidden
+		transition display .3s ease
 		max-width 1100px
-		display flex
-		flex-flow row wrap
+		display none
+		position fixed
+		width 100%
+		height 320px
+		background-color $light_gray
 
 		&--show
-			height auto
+			display block
+			//height auto
 	&-item
 		display block
 		width 100%
@@ -38,7 +41,7 @@
 		text-decoration none
 		color $black
 		width 100%
-		padding 1.5em
+		padding 1em
 		display inline-block		
 		font-size 1em		
 
@@ -47,7 +50,7 @@
 @media (min-width: 768px)
 	.MainMenu		
 		margin-right .5rem
-		width 90%
+		width 90%		
 
 		&-button
 			display none
@@ -59,6 +62,8 @@
 			flex-flow row nowrap
 			justify-content space-around
 			text-align center
+			overflow hidden
+			position inherit
 			
 		&-item
 			display inline-block			
