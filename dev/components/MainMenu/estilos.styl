@@ -36,6 +36,9 @@
 			background-color $naranja
 			.MainMenu-link
 				color $white
+				
+		& + .AboutMenu
+			display inherit
 
 	&-link
 		text-decoration none
@@ -66,11 +69,14 @@
 			position inherit
 			
 		&-item
+			width inherit
 			display inline-block			
 			&:hover			
 				background-color $naranja
 				.MainMenu-link
-					color $white			
+					color $white
+			& + .AboutMenu
+				display none			
 		&-link
 			padding 0 .4em
 			width auto

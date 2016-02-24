@@ -4,8 +4,9 @@ nav(class="MainMenu "+clase)
 			- var menuData = [{"id":"cine","description":"Cine"},{"id":"digitales","description":"Digitales"},{"id":"directorios","description":"Directorios"},{"id":"eventos","description":"Eventos"},{"id":"exteriores","description":"Exteriores"},{"id":"inplace","description":"In Place"},{"id":"prensa","description":"Prensa"},{"id":"radio","description":"Radio"},{"id":"redes","description":"Redes Sociales"},{"id":"revistas","description":"Revistas"},{"id":"television","description":"Televisión"},{"id":"tv","description":"Tv de paga"},{"id":"videos","description":"Videos"}]
 			each val in menuData
 				include ../MainMenu-item/template.jade
+			include ../AboutMenu/template.jade
 	else
-		ul.MainMenu-list			
+		ul.MainMenu-list
 			- var menuData = [{"id":"cine","description":"Cine"},{"id":"digitales","description":"Digitales"},{"id":"directorios","description":"Directorios"},{"id":"eventos","description":"Eventos"},{"id":"exteriores","description":"Exteriores"},{"id":"inplace","description":"In Place"},{"id":"prensa","description":"Prensa"},{"id":"radio","description":"Radio"},{"id":"redes","description":"Redes Sociales"},{"id":"revistas","description":"Revistas"},{"id":"television","description":"Televisión"},{"id":"tv","description":"Tv de paga"},{"id":"videos","description":"Videos"}]
 			each val in menuData
 				include ../MainMenu-item/template.jade

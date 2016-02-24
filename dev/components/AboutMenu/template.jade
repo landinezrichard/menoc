@@ -1,12 +1,11 @@
 nav(class="AboutMenu "+clase)
-	if id
-		div.AboutMenu-container(id=""+id)
-			ul.AboutMenu-list
+	div.AboutMenu-container
+		if id
+			ul.AboutMenu-list(id=""+id)
 				- var menuData = [{"id":"nosotros","description":"Nosotros"},{"id":"noticias","description":"Noticias"},{"id":"contactenos","description":"Contáctenos"},{"id":"tarifas","description":"Tarifas"},{"id":"politicas","description":"Politicas de privacidad"}]
 				each val in menuData
 					include ../AboutMenu-item/template.jade
-	else
-		div.AboutMenu-container(id=""+id)
+		else
 			ul.AboutMenu-list
 				- var menuData = [{"id":"nosotros","description":"Nosotros"},{"id":"noticias","description":"Noticias"},{"id":"contactenos","description":"Contáctenos"},{"id":"tarifas","description":"Tarifas"},{"id":"politicas","description":"Politicas de privacidad"}]
 				each val in menuData
