@@ -1,5 +1,5 @@
 .MainContent
-	margin 4em 0 13em
+	margin 5em 0 0
 	background-color $white
 	
 	&-all
@@ -15,11 +15,12 @@
 			padding-top 0
 		
 	&-left
+		display none
 		width 24%
 		margin-left .5em	
 	
 	&-right
-		width 76%
+		width 100%
 		margin 0 1em
 		border-bottom 2px dotted $light_gray	
 	
@@ -29,3 +30,9 @@
 	.MainContent
 		width 1100px
 		margin 13em auto 0
+		
+		&-left
+			display block
+			
+		&-right
+			width 76%

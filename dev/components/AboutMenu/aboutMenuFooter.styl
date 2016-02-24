@@ -1,0 +1,31 @@
+.AboutMenu
+	display none
+
+/*Tablet*/
+
+@media (min-width: 768px)
+	.AboutMenu
+		background-color inherit
+		&-container
+			background-color inherit
+		&-button
+			display none
+			
+		&-list
+			margin 0
+			height 200px
+			line-height 1.6em
+			display block
+			text-align left
+			
+		&-item
+			display block
+			&:hover
+				background-color inherit
+				.AboutMenu-link
+					color $naranja
+			
+		&-link
+			padding 0
+			width auto
+			font-size 1.1em

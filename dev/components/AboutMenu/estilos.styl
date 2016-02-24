@@ -3,25 +3,27 @@
 .AboutMenu
 	font-weight 300
 	background-color $light_black
+	position relative
 
-	&-button
-		border 0
-		border-radius 5px
-		background-color $white
-		order 1
-		padding 0
-		margin-left 1rem		
-		
 	&-container
+		background-color $light_black
 		margin 0 auto
 		max-width 1100px
+		position absolute
+		top 5em
+		left 0
+		z-index -1
+		transition transform 0.3s ease-out
+		transform translate(-250px,0)
+		
+		&.is-open
+			transform translate(0,0)
 
 	&-list
-		margin 0 1.4em 0 0
+		margin 0
 		padding 0
 		list-style none
-		height 0
-		overflow hidden
+		height auto		
 		transition height .3s ease		
 
 		&--show
@@ -40,16 +42,16 @@
 		padding 1.5em
 		display block		
 		font-size 1em
-		
-		&:active
-			background-color $naranja
-
 
 /*Tablet*/
 
 @media (min-width: 768px)
-	.AboutMenu		
-
+	.AboutMenu
+		&-container
+			position inherit
+			top inherit
+			left inherit
+			z-index inherit
 		&-button
 			display none
 			
@@ -60,13 +62,14 @@
 			flex-flow row nowrap
 			justify-content flex-end
 			text-align center
+			margin 0 1.4em 0 0
 			
 		&-item
 			display inline-block
 			&:hover
 				background-color $naranja
 				.AboutMenu-link
-					color $black					
+					color $black
 			
 		&-link
 			padding 0 .4em

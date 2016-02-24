@@ -4,6 +4,7 @@
 	const showMenu = require('./components/MainMenu');
 	const asideAcordeon = require('./components/Aside');
 	const slides   = require('./components/Slider');
+	const mediaQuery       = require('./lib/mediaQuery.js');
 	// const coments  = require('./components/Coments');
 
 	/*Listeners*/
@@ -11,12 +12,13 @@
 
 	function onDOMload() {		
 		showMenu.init();
+		mediaQuery.init();
 		asideAcordeon.init();
 		slides.init();
 		// coments.init();
 
-		require('./lib/livefyre.js');
-		require('./components/Coments');
+		// require('./lib/livefyre.js');
+		// require('./components/Coments');
 	}
 
 }())

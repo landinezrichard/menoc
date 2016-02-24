@@ -30,6 +30,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "hammerjs": "^2.0.6",
     "jquery": "^2.2.1"
   }
 }

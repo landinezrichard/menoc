@@ -8,11 +8,13 @@ footer.Footer
 			- var clase = "MainMenu--footer"
 			- var id = ""
 			include ../MainMenu/template.jade
-		div.Footer-about
-			h4.Footer-aboutTitle.u-leftBorder
+		div.Footer-about.u-leftBorder
+			h4.Footer-aboutTitle
 				|	Sobre Menoc
-		div.Footer-pais
-			h4.Footer-paisTitle.u-leftBorder
+			- var clase = "AboutMenu--footer"			
+			include ../AboutMenu/template.jade
+		div.Footer-pais.u-leftBorder
+			h4.Footer-paisTitle
 				|	Elegir país
 	div.Footer-copy
 		p.Footer-copyText

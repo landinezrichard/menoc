@@ -1,6 +1,7 @@
 /*COMPONENTE BUSCADOR*/
 
 .Buscador
+	display none
 	text-align center
 	padding-bottom 1em
 	
@@ -14,3 +15,9 @@
 	&-icon
 		padding 2em 0 2em 2em
 		color $white
+
+/*Tablet*/
+
+@media (min-width: 768px)
+	.Buscador
+		display block

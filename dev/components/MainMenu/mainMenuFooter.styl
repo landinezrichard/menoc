@@ -1,28 +1,41 @@
 /*Tablet*/
 
 @media (min-width: 768px)
-	.MainMenu				
+	.MainMenu
+		margin 0
+		&--footer			
+			background-color $black
+			color $white
+			margin 0
+			width 100%
 
 		&-button
 			display none
 			
-		&-list
-			height 4em
+		&-list			
+			height 200px			
+			overflow visible
+			margin 0
+			display flex
+			flex-flow column wrap
+			justify-content space-around
 			line-height 4em
-			display block			
-			text-align center
+			text-align left
+			font-weight 300
+			font-size 1.1em
 			
 		&-item
+			line-height normal
 			display inline-block
+			float none
+			height initial
+			width inherit
 			&:hover
-				background-color $naranja
+			&:active
+				background-color inherit			
 				.MainMenu-link
-					color $white
+					color $naranja
 			
 		&-link
-			padding 0 .4em
-			width auto			
-			
-			&:active
-				border-bottom 4px solid $lima
-		
+			padding 0			
+			color $white	

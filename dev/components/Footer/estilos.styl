@@ -16,15 +16,30 @@
 		
 	&-copy
 		text-align center
+		margin-top 1em
+		
 	&-copyText
 		margin 0
 		font-weight 300
 		font-size .8em
-
-	&-categoria
+		
+	&-logo
+		width 25%
+		
+	&-categoria		
+		height 234px
+		// estilos menu principal en el Footer
+		@import "../MainMenu/mainMenuFooter.styl"
+		
 	&-about
-	&-pais
-		padding 0 2em
+		// estilos menu about en el Footer
+		@import "../AboutMenu/aboutMenuFooter.styl"
+
+	// &-categoria
+	// &-about
+	// &-pais
+	// 	padding 0 2em
+	// 	width 25%
 		
 	&-categoriaTitle
 	&-aboutTitle
@@ -36,3 +51,6 @@
 		
 .u-leftBorder
 	border-left 1px solid $light_gray
+	padding 0 2em
+	width 25%
+	height 234px

@@ -1,10 +1,12 @@
 header.Header
+	- var id = "aboutMenu"
+	- var clase = ""
 	include ../AboutMenu/template.jade
 	div.Header-container
 		div.Header-mobile
 			div.Header-logo
 				|	Logo
 			include ../MainMenu-button/template.jade
-		- var id = "#menu"
+		- var id = "menu"
 		include ../MainMenu/template.jade
 	include ../Buscador/template.jade
