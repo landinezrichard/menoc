@@ -16,6 +16,14 @@ footer.Footer
 		div.Footer-pais.u-leftBorder
 			h4.Footer-paisTitle
 				|	Elegir país
+	div.Footer-paisMobile
+		- var paisData = [{"value":"Mexico"},{"value":"Colombia"},{"value":"Argentina"},{"value":"Estados Unidos"},{"value":"Perú"},{"value":"Costa Rica"},{"value":"Cuba"},{"value":"Ecuador"},{"value":"Nicaragua"},{"value":"Puerto Rico"},{"value":"El Salvador"},{"value":"Honduras"},{"value":"Panama"},{"value":"Paraguay"},{"value":"Guatemala"},{"value":"República Dominicana"},{"value":"Uruguay"},{"value":"Chile"},{"value":"Bolivia"},{"value":"España"}]
+		select
+			option(value="ninguno")
+				|	--Elija su país--
+			each val in paisData
+				option(value="#{val.value}")
+					|	#{val.value}
 	div.Footer-copy
 		p.Footer-copyText
 			|	Copyright © 2015 www.menoc.net Todos los derechos reservados - Diseño y desarrollo por PAXZU
