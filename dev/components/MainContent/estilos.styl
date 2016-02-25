@@ -1,7 +1,17 @@
+.Contenedor-central
+	margin 0 auto
+	width 1100px
+	
+.Center
+	margin 0 auto
+	
+.Fullwidth
+	background-color $light_gray
+	// height 360px
+
 .MainContent
 	margin 5em 0 0
-	background-color $white
-	
+		
 	&-all
 		position relative
 		top 0
@@ -11,25 +21,32 @@
 		display flex
 		flex-flow row nowrap
 		padding-top 2.1em
+		margin-top 2.1em
 		&:first-child
 			padding-top 0
+			margin-top 0			
 		
 	&-left
 		display none
 		width 24%
 		margin-left .5em	
 	
+	// &-left--show
+	// 	display block
+		
 	&-right
 		width 100%
 		margin 0 1em
-		border-bottom 2px dotted $light_gray	
+		border-top 2px dotted $light_gray	
 	
 /*Tablet*/
 
 @media (min-width: 768px)
+	.Center
+		width 1100px
 	.MainContent
 		width 1100px
-		margin 13em auto 0
+		margin 0 auto
 		
 		&-left
 			display block

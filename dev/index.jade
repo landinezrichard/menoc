@@ -7,13 +7,16 @@ html(lang="es")
 		link(rel="stylesheet", href="css/estilos.css")
 	body
 		include ./components/Header/template.jade
-		section.MainContent
-			div.MainContent-all
+		section.Fullwidth
+			div.MainContent
 				div.MainContent-row
-					div.MainContent-left
+					div.MainContent-left--show
 						include ./components/Aside/template.jade
 					div.MainContent-right
 						include ./components/Slider/template.jade
+
+		section.Center
+			div.MainContent-all
 				div.MainContent-row
 					div.MainContent-left
 						include ./components/Publicidad/template.jade
