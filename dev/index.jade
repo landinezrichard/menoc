@@ -7,13 +7,23 @@ html(lang="es")
 		link(rel="stylesheet", href="css/estilos.css")
 	body
 		include ./components/Header/template.jade
-		section.Fullwidth
-			div.MainContent
-				div.MainContent-row
+		div.Graycolor
+			section.MainContent
+				div.MainContent-row.Size
 					div.MainContent-left--show
 						include ./components/Aside/template.jade
 					div.MainContent-right
 						include ./components/Slider/template.jade
+		
+		div.Center
+			div.MainContent-row
+				div.MainContent-left
+				div.MainContent-right
+					div.MenocDescription
+						p.MenocDescription-text
+							span.MenocDescription-name
+								|	Menoc.net
+							|	es un punto de encuentro de los medios con los profesionales del sector publicitario, proporcionándoles un servicio de consulta y localización de información,permanentemente actualizada sobre los medios publicitarios.
 
 		section.Center
 			div.MainContent-all

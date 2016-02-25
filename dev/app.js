@@ -5,6 +5,7 @@
 	const asideAcordeon = require('./components/Aside');
 	const slides   = require('./components/Slider');
 	const mediaQuery       = require('./lib/mediaQuery.js');
+	const showSearch = require('./components/Buscador');
 	// const coments  = require('./components/Coments');
 
 	/*Listeners*/
@@ -12,6 +13,7 @@
 
 	function onDOMload() {		
 		showMenu.init();
+		showSearch.init();
 		mediaQuery.init();
 		asideAcordeon.init();
 		slides.init();

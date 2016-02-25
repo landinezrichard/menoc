@@ -2,8 +2,8 @@
 
 .Aside
 	background-color $white
-	&-menu		
-		width 100%		
+	&-menu
+		width 100%	
 		border-radius 5px
 		box-shadow 0 1px 6px $dark_gray
 		padding-top 1em
@@ -11,6 +11,8 @@
 	&-menuItem
 		background-color $light_gray
 		position relative
+		padding .4em
+		margin .3em 1em
 
 		&:hover
 			cursor pointer
@@ -20,9 +22,6 @@
 			
 	&-menuList
 		display none
-		
-	&-menuItem
-	&-menuList
 		margin 1em
 		
 	&-subItem
@@ -41,3 +40,9 @@
 		position absolute
 		right 0
 		padding-right 1em
+
+/*Tablet*/
+
+// @media (min-width: 768px)
+// 	.Aside
+// 		

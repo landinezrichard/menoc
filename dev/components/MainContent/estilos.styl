@@ -5,7 +5,7 @@
 .Center
 	margin 0 auto
 	
-.Fullwidth
+.Graycolor
 	background-color $light_gray
 	// height 360px
 
@@ -35,14 +35,29 @@
 		
 	&-right
 		width 100%
-		margin 0 1em
-		border-top 2px dotted $light_gray	
+		margin 0
+		border-top 2px dotted $light_gray
+		
+.MenocDescription
+	display block
+	margin 0 1em
+	&-text
+		font-weight 300
+		font-size 1.2em
+		color $gray
+	&-name
+		color $yellow
+		font-weight 700
+		font-size 2.2em
 	
 /*Tablet*/
 
 @media (min-width: 768px)
 	.Center
 		width 1100px
+		
+	.Size
+		height 335px
 	.MainContent
 		width 1100px
 		margin 0 auto
@@ -53,6 +68,14 @@
 		
 		&-left
 			display block
+		&-left--show
+			display block
+			width 24%
+			margin-left .5em
 			
 		&-right
 			width 76%
+			margin 0 1em
+			
+	.MenocDescription		
+		margin 0
