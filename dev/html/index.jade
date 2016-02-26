@@ -4,16 +4,16 @@ html(lang="es")
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
 		title Menoc
-		link(rel="stylesheet", href="css/estilos.css")
+		link(rel="stylesheet", href="../css/estilos.css")
 	body
-		include ./components/Header/template.jade
+		include ../components/Header/template.jade
 		div.Graycolor
 			section.MainContent
 				div.MainContent-row.Size
 					div.MainContent-left--show
-						include ./components/Aside/template.jade
+						include ../components/Aside/template.jade
 					div.MainContent-right--sinpad.slide-width
-						include ./components/Slider/template.jade
+						include ../components/Slider/template.jade
 		
 		div.Center
 			div.MainContent-row
@@ -29,14 +29,14 @@ html(lang="es")
 			div.MainContent-all
 				div.MainContent-row
 					div.MainContent-left
-						include ./components/Publicidad/template.jade
+						include ../components/Publicidad/template.jade
 					div.MainContent-right
-						include ./components/News/template.jade
+						include ../components/News/template.jade
 				div.MainContent-row
 					div.MainContent-left
-						include ./components/Publicidad/template.jade
+						include ../components/Publicidad/template.jade
 					div.MainContent-right
-						include ./components/Publicidad/template.jade
-						include ./components/Coments/template.jade
-		include ./components/Footer/template.jade
-		script(type="text/javascript", src="js/app.js")
+						include ../components/Publicidad/template.jade
+						include ../components/Coments/template.jade
+		include ../components/Footer/template.jade
+		script(type="text/javascript", src="../js/app.js")

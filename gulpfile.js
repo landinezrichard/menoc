@@ -34,8 +34,9 @@ var paths = {
   html:{
     main  : 'dev/index.jade',
     watch : 'dev/**/*.jade',
-    dest  : 'public',
-    inline: 'public/index.html'
+    dest  : 'public/html/',
+    inline: 'public/index.html',
+    html  : 'dev/html/*.jade'
   },
   js:{
     main  : 'dev/app.js',
@@ -49,7 +50,11 @@ var paths = {
   fonts:{
     watch : ['dev/assets/**/*.eot','dev/assets/**/*.svg','dev/assets/**/*.ttf','dev/assets/**/*.woff'],
     dest  : 'public/'//se guardan en public/fonts/
+  },
+  server:{
+    folder : './public/'
   }
+
 };
 
 /*
@@ -58,7 +63,7 @@ var paths = {
 gulp.task('server', function(){ 
   var ip = getIpAddress();
   console.log(gutil.colors.bgGreen("Server running on:"+ip+":8081")); 
-  return gulp.src('./public')
+  return gulp.src(paths.server.folder)
   .pipe(webserver({
     host:'0.0.0.0',
     port: '8081',
@@ -89,7 +94,7 @@ gulp.task('build-css', function(){
 * Tarea build-html
 */
 gulp.task('build-html', function() {
-  return gulp.src(paths.html.main)
+  return gulp.src(paths.html.html)
   .pipe(jade({
       pretty: true
   }))
