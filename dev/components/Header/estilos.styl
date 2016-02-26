@@ -49,8 +49,45 @@
 		
 		&-logo
 			margin 0 0 0 .5rem
-		&-buttons
-			display none
+		// &-buttons
+		// 	display none
 			
 		& .AboutMenu
-			display inherit		
+			display inherit
+			
+		& .Buscador
+			display none
+	.Search-button
+		display none
+
+/*Desktop*/
+
+@media (min-width: 1000px)
+	.Header
+		position relative
+		height auto
+		//height 5em
+		
+		&-container
+			display flex
+			flex-flow row nowrap
+			justify-content space-around
+			height 5em
+			transition all .3s ease
+			align-items center
+			
+		&-mobile
+			width auto
+		
+		&-logo
+			margin 0 0 0 .5rem
+		// &-buttons
+		// 	display none
+			
+		& .AboutMenu
+			display inherit
+			
+		// & .Buscador
+		// 	display none
+	.Search-button
+		display none
