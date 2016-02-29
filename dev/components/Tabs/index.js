@@ -1,19 +1,7 @@
 var tabs = (function () {
 
 	/* Dependencias*/
-	const $ = require('jquery');
-	
-	// $("#content div").hide();
-	//         $("#tabs li:first").attr("id","current");
-	//         $("#content div:first").fadeIn();
-	 
-	//     $('#tabs a').click(function(e) {
-	//         e.preventDefault();
-	//         $("#content div").hide();
-	//         $("#tabs li").attr("id","");
-	//         $(this).parent().attr("id","current");
-	//         $('#' + $(this).attr('title')).fadeIn();
-	//     });
+	const $ = require('jquery');	
 
 	/*
 	* Objeto con valores de clases que se vana a agregar y los elementos que vamos a obtener del DOM

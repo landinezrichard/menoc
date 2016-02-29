@@ -7,6 +7,9 @@ ul.Tabs#tabsNav
 			|	Local
 div.Tabs-content#content
 	div#tab_one.Tabs-contentPane.Tabs--is-active
-		|	tab uno
+		- var dataItem = [{"img_src":"../images/TvAztecaLogo.png","total_stars":"5","title":"Azteca","description":"Televisión de México","group":"Nombre Grupo","antiguedad":"XX años","contenido":"DEPORTES / FARANDULA /  NOTICIAS","description_full":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cupiditate itaque dolor? Amet omnis quisquam voluptatem velit deleniti facere mollitia ipsa dignissimos, doloremque quidem nemo deserunt voluptatum quo recusandae dolorem."},{"img_src":"../images/Televisa-Logo-vector-Image.png","total_stars":"4","title":"Televisa","description":"Televisión de México","group":"Nombre Grupo","antiguedad":"XX años","contenido":"DEPORTES","description_full":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cupiditate itaque dolor? Amet omnis quisquam voluptatem velit deleniti facere mollitia ipsa dignissimos, doloremque quidem nemo deserunt voluptatum quo recusandae dolorem."},{"img_src":"../images/canal_22.jpg","total_stars":"2","title":"Canal 22","description":"Televisión de México","group":"Nombre Grupo","antiguedad":"XX años","contenido":"NOTICIAS","description_full":""},{"img_src":"../images/multimedios-logo.jpg","total_stars":"2","title":"Multimedios Television","description":"Televisión de México","group":"Nombre Grupo","antiguedad":"XX años","contenido":"FARANDULA","description_full":""}]
+		each val in dataItem
+			include ../Medio-item/template.jade
 	div#tab_two.Tabs-contentPane
-		|	tab dos
+		each val in dataItem
+			include ../Medio-item/template.jade

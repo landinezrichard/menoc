@@ -1,2 +1,39 @@
 article.Medio-item
-	
+	div.Medio-graph
+		figure.Medio-imageContainer
+			img.Medio-image(src="#{val.img_src}", alt="#{val.title}")
+		div.Medio-stars
+			- for (var x = 1; x <= val.total_stars; x++)
+				span.icon-star-full
+	div.Medio-text
+		h5.Medio-title
+			|	#{val.title}
+		p.Medio-description
+			|	#{val.description}
+		p.Medio-description
+			|	Pertenece al grupo
+			span.Medio-group.greenText
+				|	#{val.group}
+		p.Medio-description
+			|	Antiguedad
+			span.yellowText
+				|	#{val.antiguedad}
+		p.Medio-description
+			|	Contenido
+			span.yellowText
+				|	#{val.contenido}
+		p.Medio-description
+			|	#{val.description_full}
+	div.Medio-features
+		div.Medio-featureItem
+			span.Medio-featureIcon.icon-contacto
+			p.Medio-featureText
+				|	Contacto
+		div.Medio-featureItem
+			span.Medio-featureIcon.icon-archivos
+			p.Medio-featureText
+				|	Archivos
+		div.Medio-featureItem
+			span.Medio-featureIcon.icon-enlaces
+			p.Medio-featureText
+				|	Enlaces
