@@ -1,0 +1,78 @@
+/*NOTICIAS_FECHA*/
+
+.Noticias
+	
+	&-item
+		background-image none
+		width 95%
+		display block
+		border-top 1px dotted $light_gray
+		padding 1em 0
+		margin 0 2.5%
+	
+	&-imageContainer
+		// max-width 178px
+		margin 0
+		
+	&-text
+		max-width 315px
+		text-align left
+		margin 0
+		width 100%
+		amrgin .5em 0
+		// margin 0 1em
+		// margin 0 2.5%
+		
+	&-date
+		font-weight 300
+		font-size 1em
+		color $light_gray2
+		
+	&-itemTitle
+		font-weight 700
+		font-size 1.12em
+		color $dark_gray
+		overflow(ellipsis)
+		
+	&-description
+		font-weight 300
+		font-size 1em
+		color $dark_gray
+		overflow(ellipsis)
+		
+	&-date
+	&-itemTitle
+	&-description
+		margin 0
+
+	&-imageContainer
+	&-text
+	&-button
+	&-buttonContainer
+		display inline-block
+		vertical-align middle
+		
+	&-buttonContainer
+		background-image url(../images/sombra-btn-nt.png)
+		background-repeat no-repeat
+		background-position bottom center
+		display inline-block
+		padding 0 22px 2px
+		
+	&-button
+		background $lima
+		color $white
+		padding .4em 3.5em
+		border none
+		text-decoration none
+		display inline-block
+		
+/*Tablet*/
+
+@media (min-width: 768px)
+	.Noticias
+		&-imageContainer
+			max-width 178px
+
+		&-text
+			margin 0 1em

@@ -31,7 +31,10 @@ html(lang="es")
 					div.MainContent-left
 						include ../components/Publicidad/template.jade
 					div.MainContent-right
-						include ../components/News/template.jade
+						div.News-list
+						- for (var x = 1; x <= 2; x++)
+							include ../components/News-item/template.jade
+						//- include ../components/News/template.jade
 				div.MainContent-row
 					div.MainContent-left
 						include ../components/Publicidad/template.jade
