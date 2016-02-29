@@ -1,11 +1,8 @@
 article.Medio-item
-	div.Medio-graph
+	div.Medio-graph.Search-graph
 		figure.Medio-imageContainer
 			img.Medio-image(src="#{val.img_src}", alt="#{val.title}")
-		div.Medio-stars
-			- for (var x = 1; x <= val.total_stars; x++)
-				span.icon-star-full
-	div.Medio-text
+	div.Medio-text.Search-text
 		h5.Medio-title
 			|	#{val.title}
 		p.Medio-description
@@ -13,18 +10,12 @@ article.Medio-item
 		p.Medio-description
 			|	Pertenece al medio
 			span.Medio-group.orangeText
-				|	#{val.group}
+				|	#{val.medio}
 		p.Medio-description
-			|	Antiguedad
-			span.yellowText
-				|	#{val.antiguedad}
-		p.Medio-description
-			|	Contenido
-			span.yellowText
-				|	#{val.contenido}
-		p.Medio-description
-			|	#{val.description_full}
-	div.Medio-features
+			|	Pertenece al grupo
+			span.Medio-group.greenText
+				|	#{val.group}		
+	div.Search-features
 		div.Medio-featureItem
 			span.Medio-featureIcon.icon-contacto
 			p.Medio-featureText

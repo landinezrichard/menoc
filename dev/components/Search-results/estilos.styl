@@ -1,0 +1,41 @@
+/*SEARCH RESULTS*/
+.Search
+	text-align center
+	&-title
+		font-weight 700
+		font-size 2.18em
+		color $lima
+		margin-top 1em
+		margin 0
+		padding-bottom .7em
+		border-bottom 1px dotted $light_gray
+		text-align left
+	&-value
+		font-weight 400
+		font-size 2.18rem
+		color $gray
+	&-graph
+		text-align center
+	&-text
+		max-width 300px
+		vertical-align middle
+	&-features
+		display inline-block
+		width 40%
+		vertical-align middle
+		
+		& .Medio-featureItem
+			display block
+			margin 0 .5em
+			
+		& .Medio-featureText
+			margin-left 0
+			
+/*Tablet*/
+
+@media (min-width: 768px)
+	.Search
+		&-features		
+			
+			& .Medio-featureItem
+				display inline-block

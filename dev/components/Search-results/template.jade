@@ -1,0 +1,8 @@
+div.Search
+	h4.Search-title
+		|	Resultados de la busqueda
+		span.Search-value
+			|	"buscador"
+	- var dataItem = [{"img_src":"../images/multimedios-logo.jpg","title":"Multimedios Radio","description":"Radio de México","group":"Nombre grupo","medio":"Nombre medio"},{"img_src":"../images/multimedios-tv-logo.jpeg","title":"Multimedios Televisión","description":"Televisión de México","group":"Nombre grupo","medio":"Nombre medio"},{"img_src":"../images/logo_milenio.png","title":"Grupo Milenio","description":"Televisión de México","group":"Nombre grupo","medio":"Nombre medio"},{"img_src":"../images/night_logo.png","title":"POL IFC","description":"Televisión de México","group":"Nombre grupo","medio":"Nombre medio"},{"img_src":"../images/TvAztecaLogo.png","title":"Azteca","description":"Televisión de México","group":"Nombre grupo","medio":"Nombre medio"},{"img_src":"../images/Televisa-Logo-vector-Image.png","title":"Televisa","description":"Televisión de México","group":"Nombre grupo","medio":"Nombre medio"},{"img_src":"../images/canal_22.jpg","title":"Canal 22","description":"Televisión de México","group":"Nombre grupo","medio":"Nombre medio"},{"img_src":"../images/multimedios-tv-logo.jpeg","title":"Multimedios Television","description":"Televisión de México","group":"Nombre grupo","medio":"Nombre medio"}]
+	each val in dataItem
+		include ../Search-item/template.jade
