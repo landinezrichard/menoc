@@ -5,6 +5,13 @@ section.News
 	div.News-bigDescription
 		p.News-bigDesText
 			|	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid libero, sit aliquam doloribus beatae. Tempora sint sequi officia placeat. Quis maxime temporibus accusantium cupiditate ratione, repudiandae pariatur reiciendis officia. Aspernatur.
-	div.Noticias
-		- for (var x = 1; x <= 5; x++)
-			include ../Noticias-fecha/template.jade
+	div#owl-noticias.owl-carousel
+		div.Noticias
+			- for (var x = 1; x <= 5; x++)
+				include ../Noticias-fecha/template.jade
+		div.Noticias
+			- for (var x = 1; x <= 3; x++)
+				include ../Noticias-fecha/template.jade
+		div.Noticias
+			- for (var x = 1; x <= 4; x++)
+				include ../Noticias-fecha/template.jade
