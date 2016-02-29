@@ -1,12 +1,12 @@
 nav(class="MainMenu "+clase)
 	if id
 		ul.MainMenu-list(id=""+id)
-			- var menuData = [{"id":"cine","description":"Cine"},{"id":"digitales","description":"Digitales"},{"id":"directorios","description":"Directorios"},{"id":"eventos","description":"Eventos"},{"id":"exteriores","description":"Exteriores"},{"id":"inplace","description":"In Place"},{"id":"prensa","description":"Prensa"},{"id":"radio","description":"Radio"},{"id":"redes","description":"Redes Sociales"},{"id":"revistas","description":"Revistas"},{"id":"television","description":"Televisión"},{"id":"tv","description":"Tv de paga"},{"id":"videos","description":"Videos"}]
+			- var menuData = [{"url":"medio.html","description":"Cine"},{"url":"medio.html","description":"Digitales"},{"url":"medio.html","description":"Directorios"},{"url":"medio.html","description":"Eventos"},{"url":"medio.html","description":"Exteriores"},{"url":"medio.html","description":"In Place"},{"url":"medio.html","description":"Prensa"},{"url":"medio.html","description":"Radio"},{"url":"medio.html","description":"Redes Sociales"},{"url":"medio.html","description":"Revistas"},{"url":"medio.html","description":"Televisión"},{"url":"medio.html","description":"Tv de paga"},{"url":"medio.html","description":"Videos"}]
 			each val in menuData
 				include ../MainMenu-item/template.jade
 			include ../AboutMenu/template.jade
 	else
 		ul.MainMenu-list
-			- var menuData = [{"id":"cine","description":"Cine"},{"id":"digitales","description":"Digitales"},{"id":"directorios","description":"Directorios"},{"id":"eventos","description":"Eventos"},{"id":"exteriores","description":"Exteriores"},{"id":"inplace","description":"In Place"},{"id":"prensa","description":"Prensa"},{"id":"radio","description":"Radio"},{"id":"redes","description":"Redes Sociales"},{"id":"revistas","description":"Revistas"},{"id":"television","description":"Televisión"},{"id":"tv","description":"Tv de paga"},{"id":"videos","description":"Videos"}]
+			- var menuData = [{"url":"medio.html","description":"Cine"},{"url":"medio.html","description":"Digitales"},{"url":"medio.html","description":"Directorios"},{"url":"medio.html","description":"Eventos"},{"url":"medio.html","description":"Exteriores"},{"url":"medio.html","description":"In Place"},{"url":"medio.html","description":"Prensa"},{"url":"medio.html","description":"Radio"},{"url":"medio.html","description":"Redes Sociales"},{"url":"medio.html","description":"Revistas"},{"url":"medio.html","description":"Televisión"},{"url":"medio.html","description":"Tv de paga"},{"url":"medio.html","description":"Videos"}]
 			each val in menuData
 				include ../MainMenu-item/template.jade
