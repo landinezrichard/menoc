@@ -2,11 +2,11 @@ nav(class="AboutMenu "+clase)
 	div.AboutMenu-container
 		if id
 			ul.AboutMenu-list(id=""+id)
-				- var menuData = [{"id":"nosotros","description":"Nosotros"},{"id":"noticias","description":"Noticias"},{"id":"contactenos","description":"Contáctenos"},{"id":"tarifas","description":"Tarifas"},{"id":"politicas","description":"Politicas de privacidad"}]
+				- var menuData = [{"href":"nosotros.html","description":"Nosotros"},{"href":"noticias","description":"Noticias"},{"href":"contactenos","description":"Contáctenos"},{"href":"tarifas","description":"Tarifas"},{"href":"politicas.html","description":"Politicas de privachrefad"}]
 				each val in menuData
 					include ../AboutMenu-item/template.jade
 		else
 			ul.AboutMenu-list
-				- var menuData = [{"id":"nosotros","description":"Nosotros"},{"id":"noticias","description":"Noticias"},{"id":"contactenos","description":"Contáctenos"},{"id":"tarifas","description":"Tarifas"},{"id":"politicas","description":"Politicas de privacidad"}]
+				- var menuData = [{"href":"nosotros.html","description":"Nosotros"},{"href":"noticias","description":"Noticias"},{"href":"contactenos","description":"Contáctenos"},{"href":"tarifas","description":"Tarifas"},{"href":"politicas.html","description":"Politicas de privacidad"}]
 				each val in menuData
 					include ../AboutMenu-item/template.jade

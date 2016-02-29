@@ -2,6 +2,9 @@
 @import "normalize.styl"
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,300,700')
 
+/*ICONOS COMO FUENTES*/
+@import "iconfonts.styl"
+
 $light_gray = #E4E5E5
 $dark_gray = #6D6E71
 $gray = #666666
@@ -68,8 +71,21 @@ img
 /*Estilos POLITICAS*/
 @import "../components/Politicas/estilos.styl"
 
+/*Estilos TELEVISIÓN - MEDIO*/
+@import "../components/Television/estilos.styl"
+
+/*Estilos TABS*/
+@import "../components/Tabs/estilos.styl"
+
 .greenBorder
 	background-color $lima
+	width 41px
+	height 6px
+	display inline-block
+	margin-bottom 1em
+
+.orangeBorder
+	background-color $naranja
 	width 41px
 	height 6px
 	display inline-block

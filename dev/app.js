@@ -6,6 +6,7 @@
 	const slides   = require('./components/Slider');
 	const mediaQuery       = require('./lib/mediaQuery.js');
 	const showSearch = require('./components/Buscador');
+	const tabs = require('./components/Tabs');
 	// const coments  = require('./components/Coments');
 
 	/*Listeners*/
@@ -17,6 +18,7 @@
 		mediaQuery.init();
 		asideAcordeon.init();
 		slides.init();
+		tabs.init();
 		// coments.init();
 
 		// require('./lib/livefyre.js');
