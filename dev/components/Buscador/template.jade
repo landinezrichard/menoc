@@ -1,4 +1,10 @@
-div.Buscador#search
-	form.Buscador-container
-		input.Buscador-input(type="text", name="busqueda")
-		button.Buscador-button.icon-lupa(type="submit", value="buscar", name="btn_buscar_home")
+if id_bus
+	div.Buscador(id="#{id_bus}")
+		form.Buscador-container
+			input.Buscador-input(type="text", name="busqueda")
+			button.Buscador-button.icon-lupa(type="submit", value="buscar", name="btn_buscar_home")
+else
+	div.Buscador
+		form.Buscador-container
+			input.Buscador-input(type="text", name="busqueda")
+			button.Buscador-button.icon-lupa(type="submit", value="buscar", name="btn_buscar_home")

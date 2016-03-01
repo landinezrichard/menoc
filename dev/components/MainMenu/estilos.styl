@@ -16,8 +16,7 @@
 		list-style none		
 		overflow-y scroll
 		overflow-x hidden
-		transition display .3s ease
-		max-width 1100px
+		transition display .3s ease		
 		display none
 		position fixed
 		width 100%
@@ -26,8 +25,7 @@
 		background-color $light_gray
 
 		&--show
-			display block
-			//height auto
+			display block			
 	&-item
 		display block
 		width 100%
@@ -53,33 +51,17 @@
 @media (min-width: 768px)
 	.MainMenu
 		margin-right .5rem
-
-		&-button
-			display inline-block
 			
 		&-list
-			height 4em
-			line-height 4em			
-			text-align center
-			overflow hidden
-			position inherit
-			display none			
+			height 100%
+			left 0		
 			
 		&-item
-			width auto
-			display inline-block
-			float left
-			padding 0 .5em			
-			&:hover			
-				background-color $naranja
-				.MainMenu-link
-					color $white
 			& + .AboutMenu
 				display none			
-		&-link
-			// padding 0 .4em
-			padding 0
-			width auto		
+		&-link			
+			padding 1em
+			width 100%
 
 /*Desktop*/
 
@@ -93,16 +75,13 @@
 			display none
 			
 		&-list
+			max-width 1100px
 			height 4em
-			line-height 4em
-			// display flex
-			// flex-flow row nowrap
-			// justify-content space-around
+			line-height 4em			
 			text-align center
 			overflow hidden
 			position inherit
-			display block
-			
+			display block			
 			
 		&-item
 			width auto
@@ -115,7 +94,6 @@
 					color $white
 			& + .AboutMenu
 				display none			
-		&-link
-			// padding 0 .4em
+		&-link			
 			padding 0
 			width auto

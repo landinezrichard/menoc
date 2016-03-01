@@ -13,21 +13,24 @@
 	//height 4em
 	transition all .3s ease	
 	
-	&-container
-		max-width 1100px
-		margin .5em auto
+	&-container		
+		margin 0 auto
 	
 	&-mobile
+		line-height 4em
 		display flex
-		justify-content space-between
-		line-height 4em		
+		justify-content space-between		
 	
 	&-logo
-		margin 0 1rem
-		font-size 3.62em
+		margin 0
+		margin-left 1rem
+		font-size 3.2em
+	
+	&-tablet
+		display none	
 		
 	&-buttons
-		font-size 2em	
+		font-size 2em		
 		
 	& .AboutMenu
 		display none
@@ -41,30 +44,22 @@
 @media (min-width: 768px)
 	.Header
 		position relative
-		height auto
-		//height 5em
 		
-		&-container
-			display flex
-			flex-flow row nowrap
-			justify-content space-around
+		&-container			
 			height 5em
 			transition all .3s ease
 			align-items center
-			
-		&-mobile
-			width auto
+			margin .5em auto			
 		
 		&-logo
-			margin 0 1rem
-		// &-buttons
-		// 	display none
+			margin 0 1rem		
+			
+		&-tablet
+			display inline-block
 			
 		& .AboutMenu
-			display inherit
-			
-		& .Buscador
-			display none
+			display block			
+		
 	.Search-button
 		display none
 
@@ -83,15 +78,13 @@
 			height 5em
 			transition all .3s ease
 			align-items center
+			max-width 1100px
 			
 		&-mobile
 			width auto
 		
 		&-logo
-			margin 0 1rem
-			// margin 0 0 0 .5rem
-		// &-buttons
-		// 	display none
+			margin 0 1rem			
 			
 		& .AboutMenu
 			display inherit

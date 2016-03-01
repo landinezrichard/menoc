@@ -6,10 +6,13 @@ header.Header
 		div.Header-mobile
 			div.Header-logo
 				include ../Logo/template.jade
+			//- div.Header-tablet
+			//- 	include ../Buscador/template.jade
 			div.Header-buttons
 				button#showSearch.Search-button(type='button')
 					span.icon-lupa
 				include ../MainMenu-button/template.jade
 		- var id = "menu"
 		include ../MainMenu/template.jade
+	-var id_bus = "search"
 	include ../Buscador/template.jade

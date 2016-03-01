@@ -58,27 +58,30 @@
 
 @media (min-width: 768px)
 	.Center
-		width 1100px
-		
+		width 1100px		
 	.Size
 		height 335px
 	.MainContent
 		width 1100px
 		margin 0 auto
 		
-		&-row
-			display flex
-			flex-flow row nowrap
+		// &-row
+		// 	display flex
+		// 	flex-flow row nowrap
 		
 		&-left
-			display block
+			display inline-block
 		&-left--show
-			display block
-			width 32%
+			// display block
+			// width 32%
+			display inline-block
+			width 260px
 			margin-left .5em
+			vertical-align top
 			
 		&-right
-			width 76%
+			display inline-block
+			width 70%
 			margin 0 1em		
 			
 		&-left
@@ -86,6 +89,7 @@
 			padding-top 2em
 			
 		&-right--sinpad
+			display inline-block
 			padding-top 0			
 			margin 0 1em
 			border-bottom 2px dotted $light_gray
@@ -95,7 +99,10 @@
 			display inline-block
 			
 	.MenocDescription		
-		margin 0
+		margin 0	
 		
-	.slide-width
-		width 100%
+/*Desktop*/
+
+@media (min-width: 1000px)
+	.MainContent		
+		margin 0 auto
