@@ -14,3 +14,6 @@ section.Medio-contacto
 				a.Medio-contactoLink(href="medio.html")
 					span.icon-chevron-thin-left
 					|	Volver
+	div.Medio-contactoList
+		- for (var x = 1; x <= 4; x++)
+			include ../Medio-contactoItem/template.jade
