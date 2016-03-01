@@ -1,0 +1,19 @@
+section.Medio-enlaces
+	div.Medio-enlacesContainer
+		h2.Medio-enlacesTitle
+			|	Televisión
+		div.orangeBorder
+		div.Medio-enlacesTextContainer
+			h4.Medio-enlacesSubTitle
+				|	Azteca
+			div.Medio-enlacesFeature
+				span.Medio-featureIcon.icon-enlaces
+				p.Medio-featureText
+					|	Enlaces
+			span.Medio-enlacesNav
+				a.Medio-enlacesLink(href="medio.html")
+					span.icon-chevron-thin-left
+					|	Volver
+	div.Medio-enlacesList
+		- for (var x = 1; x <= 3; x++)
+			include ../Medio-enlacesItem/template.jade
