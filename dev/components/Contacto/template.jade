@@ -6,20 +6,26 @@ section.Contacto
 		|	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid libero, sit aliquam doloribus beatae. Tempora sint sequi officia placeat. Quis maxime temporibus accusantium cupiditate ratione, repudiandae pariatur reiciendis officia. Aspernatur.
 	div.Contacto-formContainer
 		form.Contacto-form()
-			label.Contacto-label
-				|	Nombre
-			input.Contacto-input(type="text")
-			label.Contacto-label
-				|	E-mail
-			input.Contacto-input(type="text")
-			label.Contacto-label
-				|	Ciudad
-			input.Contacto-input(type="text")
-			label.Contacto-label
-				|	Tel / Cel
-			input.Contacto-input(type="text")
-			label.Contacto-label
-				|	Comentario
-			textarea.Contacto-input(type="text-area")
-			button.Contacto-button(type="submit")
-				|	Enviar
+			div.Contacto-fieldContainer
+				label.Contacto-label
+					|	Nombre
+				input.Contacto-input(type="text")
+			div.Contacto-fieldContainer
+				label.Contacto-label
+					|	E-mail
+				input.Contacto-input(type="text")
+			div.Contacto-fieldContainer
+				label.Contacto-label
+					|	Ciudad
+				input.Contacto-input(type="text")
+			div.Contacto-fieldContainer
+				label.Contacto-label
+					|	Tel / Cel
+				input.Contacto-input(type="text")
+			div.Contacto-fieldContainer.Contacto-textArea
+				label.Contacto-label
+					|	Comentario
+				textarea.Contacto-input.Contacto-textAreaH(type="text-area")
+			div.Contacto-bottom
+				div.Contacto-buttonContainer
+					input.Contacto-button(type="submit", value="Enviar")
