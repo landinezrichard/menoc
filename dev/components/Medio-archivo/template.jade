@@ -1,0 +1,19 @@
+section.Medio-archivo
+	div.Medio-archivoContainer
+		h2.Medio-archivoTitle
+			|	Televisión
+		div.orangeBorder
+		div.Medio-archivoTextContainer
+			h4.Medio-archivoSubTitle
+				|	Azteca
+			div.Medio-archivoFeature
+				span.Medio-featureIcon.icon-archivos
+				p.Medio-featureText
+					|	Archivos
+			span.Medio-archivoNav
+				a.Medio-archivoLink(href="medio.html")
+					span.icon-chevron-thin-left
+					|	Volver
+	div.Medio-archivoList
+		- for (var x = 1; x <= 3; x++)
+			include ../Medio-archivoItem/template.jade
