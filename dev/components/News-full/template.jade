@@ -1,0 +1,26 @@
+section.News
+	h1.News-title
+			|	Noticias
+	div.greenBorder
+	div.News-full
+		figure.News-fullImageContainer
+			img.News-fullImage(src="../images/noticia.png", alt="Noticia")
+		div.News-fullRight
+			p.News-fullDate
+				|	12/11/1015
+			p.News-fullTitle
+				|	16 datos sobre consumo de medios digitales en México en 2012
+		div.News-fullDescription
+			p
+				|	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur voluptatibus, vitae neque culpa exercitationem at, ea sapiente amet inventore officia sint quod veritatis ipsum dicta veniam blanditiis, commodi ipsam quidem.
+			p.News-fullAutor
+				|	Autor:
+				a.News-fullLink(href="#")
+					|	http://www.noticias.com/texto
+	h1.News-fullSubtitle
+		|	Otras Noticias
+	div.orangeBorder
+
+	div.Noticias.News-fullList
+		- for (var x = 1; x <= 3; x++)
+			include ../Noticias-fecha/template.jade
