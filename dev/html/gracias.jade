@@ -1,0 +1,20 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+		title Menoc
+		link(rel="stylesheet", href="../css/estilos.css")
+	body
+		include ../components/Header/template.jade
+		section.MainContent
+			div.MainContent-row
+				div.MainContent-left--show
+					include ../components/Aside/template.jade
+					span.MainContent--hidden
+						include ../components/Publicidad/template.jade
+				div.MainContent-right--sinpad.slide-width
+					include ../components/Gracias/template.jade
+
+		include ../components/Footer/template.jade
+		script(type="text/javascript", src="../js/app.js")
