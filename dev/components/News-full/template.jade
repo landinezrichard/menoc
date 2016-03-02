@@ -20,7 +20,13 @@ section.News
 	h1.News-fullSubtitle
 		|	Otras Noticias
 	div.orangeBorder
-
-	div.Noticias.News-fullList
-		- for (var x = 1; x <= 3; x++)
-			include ../Noticias-fecha/template.jade
+	div#owl-noticias.owl-carousel
+		div.Noticias.News-fullList
+			- for (var x = 1; x <= 3; x++)
+				include ../Noticias-fecha/template.jade
+		div.Noticias.News-fullList
+			- for (var x = 1; x <= 2; x++)
+				include ../Noticias-fecha/template.jade
+		div.Noticias.News-fullList
+			- for (var x = 1; x <= 3; x++)
+				include ../Noticias-fecha/template.jade

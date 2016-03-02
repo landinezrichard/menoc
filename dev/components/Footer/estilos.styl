@@ -32,12 +32,6 @@
 	&-about
 		// estilos menu about en el Footer
 		@import "../AboutMenu/aboutMenuFooter.styl"
-
-	// &-categoria
-	// &-about
-	// &-pais
-	// 	padding 0 2em
-	// 	width 25%
 		
 	&-categoriaTitle
 	&-aboutTitle
@@ -49,7 +43,9 @@
 	&-paisMobile
 		color $black
 		text-align center
-				
+		
+	&-paisDesktop
+		display none				
 		
 .u-leftBorder
 	border-left 1px solid $light_gray
@@ -72,3 +68,10 @@
 			
 		&-paisMobile
 			display none
+			
+		&-paisDesktop
+			display inline-block
+			
+			& .Paises-item
+				max-width 35px
+				margin 0 .2em
